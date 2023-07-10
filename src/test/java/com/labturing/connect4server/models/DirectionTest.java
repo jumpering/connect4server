@@ -8,6 +8,7 @@ public class DirectionTest {
 
     @Test
     public void givenDirectionWhenGetOppositeThenReturnOpposite(){
-        
+        this.direction = Direction.NORTH;
+        assertEquals(Direction.SOUTH, this.direction.getOpposite());
     }
 }
